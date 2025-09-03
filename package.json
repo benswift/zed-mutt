@@ -1,0 +1,21 @@
+{
+  "name": "zed-mutt",
+  "version": "1.0.0",
+  "description": "A Zed editor extension providing syntax highlighting for mutt/neomutt configuration and compose files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benswift/zed-mutt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/benswift/zed-mutt/issues"
+  },
+  "homepage": "https://github.com/benswift/zed-mutt#readme"
+}
