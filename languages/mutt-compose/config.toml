@@ -1,20 +1,7 @@
 name = "Mutt Compose"
 grammar = "mutt_compose"
-path_suffixes = ["mutt-compose"]
-file_types = ["mutt-compose"]
+path_suffixes = ["eml", "msg"]
 line_comments = ["# "]
-block_comment = ["# ", ""]
 tab_size = 2
-
-# Match files in neomutt cache/temp directories
-[file_path_patterns]
-patterns = [
-  "**/neomutt/cache/**/*",
-  "**/mutt/cache/**/*",
-  "**/neomutt/temp/**/*",
-  "**/mutt/temp/**/*",
-  "neomutt-*",
-  "mutt-*",
-  "/tmp/neomutt-*",
-  "/tmp/mutt-*"
-]
+# Match mutt/neomutt compose files by their first line (usually starts with a header)
+first_line_pattern = "^(From|To|Subject|Date|Message-ID):"
