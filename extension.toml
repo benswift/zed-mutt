@@ -8,8 +8,8 @@ repository = "https://github.com/benswift/zed-mutt"
 
 [grammars.muttrc]
 repository = "https://github.com/benswift/tree-sitter-muttrc"
-rev = "173b0ab53a9c07962c9777189c4c70e90f1c1837"
+rev = "8b9b304"
 
 [grammars.mutt_compose]
 repository = "https://github.com/benswift/tree-sitter-mutt-compose"
-rev = "3ebe0adc2893cf66f49feabe9986f875372a7586"
+rev = "33d981d081705ca53db1aaed43e0e4ec28e32706"

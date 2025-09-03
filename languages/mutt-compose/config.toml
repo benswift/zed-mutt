@@ -6,11 +6,13 @@ line_comments = ["# "]
 block_comment = ["# ", ""]
 tab_size = 2
 
-# Match files in neomutt cache directory
+# Match files in neomutt cache/temp directories
 [file_path_patterns]
 patterns = [
   "**/neomutt/cache/**/*",
   "**/mutt/cache/**/*",
+  "**/neomutt/temp/**/*",
+  "**/mutt/temp/**/*",
   "neomutt-*",
   "mutt-*",
   "/tmp/neomutt-*",
