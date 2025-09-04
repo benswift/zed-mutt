@@ -1,8 +1,18 @@
-; Headers get highlighted as properties (field names)
-(header) @property
+; Headers - highlight key and value separately using field names
+(header
+  key: (header_key) @property
+  ":" @punctuation.delimiter
+  value: (header_value) @string)
 
-; Body gets highlighted as regular text
-(body) @string
+; Body with different highlighting for quote levels
+(body) @text
 
-; Punctuation
-":" @punctuation.delimiter
+; Reply quote levels (these use Zed's comment scopes for visual distinction)
+((body) @comment
+  (#match? @comment "^>\\s"))
+
+((body) @comment.documentation
+  (#match? @comment.documentation "^>\\s*>\\s"))
+
+((body) @comment.block
+  (#match? @comment.block "^>\\s*>\\s*>\\s"))
