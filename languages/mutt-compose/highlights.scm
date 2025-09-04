@@ -1,6 +1,6 @@
 ; Headers - highlight key and value separately using field names
 (header
-  key: (header_key) @property
+  key: (header_key) @type
   ":" @punctuation.delimiter
   value: (header_value) @string)
 
